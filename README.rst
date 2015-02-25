@@ -1,16 +1,17 @@
 CAOM-2 Utilities
 ================
 
-XSLT Stylesheets
-----------------
+Scripts
+-------
 
 * caom2_summary
 
-    Displays a text summary of the structure of a CAOM-2 XML document.
+    Displays a text summary of the structure of a CAOM-2 XML document
+    using the caom2_summary.xslt stylesheet.
 
     Usage example::
 
-        xsltproc xslt/caom2_summary.xslt some_caom2_document.xml
+        caom2_summary some_caom2_document.xml
 
 Copyright
 ---------
