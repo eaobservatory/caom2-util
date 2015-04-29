@@ -1,0 +1,7 @@
+SELECT o.observationID, p.productID
+FROM caom2.Observation AS o
+    JOIN caom2.Plane AS p
+    ON p.obsId=o.obsID
+WHERE collection='JCMT'
+    AND o.algorithm_name='exposure'
+    AND p.time_bounds_width > 1

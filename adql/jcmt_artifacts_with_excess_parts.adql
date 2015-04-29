@@ -1,0 +1,9 @@
+SELECT caom2.Observation.observationID AS obs,
+    caom2.Plane.productID as plane,
+    caom2.Artifact.uri as uri
+FROM caom2.Observation
+JOIN caom2.Plane ON caom2.Plane.obsID=caom2.Observation.obsID
+JOIN caom2.Artifact ON caom2.Artifact.planeID=caom2.Plane.planeID
+WHERE caom2.Observation.collection='JCMT'
+    AND caom2.Plane.calibrationLevel=2
+    AND (SELECT COUNT(*) FROM caom2.Part WHERE caom2.Part.artifactID=caom2.Artifact.artifactID) > 50
