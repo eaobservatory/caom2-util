@@ -13,10 +13,16 @@ Scripts
 
         caom2_summary some_caom2_document.xml
 
+* caom2_mod_release
+
+    Displays last modified and release dates for a CAOM-2 observation
+    and its planes.
+
 Copyright
 ---------
 
 Copyright (C) 2015 Science and Technology Facilities Council.
+Copyright (C) 2015 East Asian Observatory.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
