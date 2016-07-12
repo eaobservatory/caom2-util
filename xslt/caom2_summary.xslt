@@ -17,7 +17,7 @@
 -->
 <xsl:stylesheet version="1.0"
         xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-        xmlns:caom2="vos://cadc.nrc.ca!vospace/CADC/xml/CAOM/v2.1">
+        xmlns:caom2="vos://cadc.nrc.ca!vospace/CADC/xml/CAOM/v2.2">
     <xsl:output method="text" />
     <xsl:strip-space elements="*" />
 
