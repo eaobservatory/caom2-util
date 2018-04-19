@@ -1,0 +1,7 @@
+SELECT o.observationID, p.productID,
+    p.energy_transition_species, p.energy_transition_transition,
+    p.provenance_runID
+FROM caom2.Observation AS o
+    JOIN caom2.Plane AS p ON p.obsId=o.obsID
+WHERE o.collection='JCMT'
+    AND p.energy_transition_transition LIKE '%  %'
